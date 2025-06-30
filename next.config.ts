@@ -1,7 +1,8 @@
-import type { NextConfig } from "next";
+const isGitHub = process.env.GITHUB_PAGES === 'true';
+const repo = 'portfolio';
 
-const nextConfig: NextConfig = {
-  /* config options here */
+export default {
+  output: 'export',
+  basePath: isGitHub ? `/${repo}` : '',
+  assetPrefix: isGitHub ? `/${repo}/` : '',
 };
-
-export default nextConfig;
