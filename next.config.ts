@@ -1,8 +1,12 @@
-const isGitHub = process.env.GITHUB_PAGES === 'true';
-const repo = 'portfolio';
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export', // Enables static HTML export
+  trailingSlash: true, // Needed for GitHub Pages
+  images: {
+    unoptimized: true, // Disable image optimization for static export
+  },
+  basePath: "/./manabdas.me",
 
-export default {
-  output: 'export',
-  basePath: isGitHub ? `/${repo}` : '',
-  assetPrefix: isGitHub ? `/${repo}/` : '',
 };
+
+module.exports = nextConfig;
