@@ -5,7 +5,7 @@ const nextConfig = {
   images: {
     unoptimized: true, // Disable image optimization for static export
   },
-  basePath: "/./manabdas.me",
+  basePath: "/./out",
 
 };
 
