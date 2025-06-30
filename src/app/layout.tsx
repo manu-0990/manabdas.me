@@ -1,10 +1,9 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import React from "react";
-
 import ThemeProvider from "@/context/Theme";
 import { Analytics } from "@vercel/analytics/next";
+import Navbar from "@/components/navbar";
 
 const OpenSans = localFont({
   variable: "--font-open-sans",
@@ -25,14 +24,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${OpenSans.variable}  dark:bg-zinc-900`}>
+      <body className={`${OpenSans.variable}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <div className="flex flex-col min-h-screen bg-white/60 dark:bg-zinc-900">
+            <Navbar />
+            <main className="flex-grow mx-auto my-0 flex w-full max-w-4xl items-center justify-between px-8">
+              {children}
+            </main>
+          </div>
+
           <Analytics />
         </ThemeProvider>
       </body>
