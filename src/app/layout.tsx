@@ -8,7 +8,7 @@ import { Analytics } from "@vercel/analytics/next";
 
 const OpenSans = localFont({
   variable: "--font-open-sans",
-  src: "/fonts/OpenSansVF.ttf",
+  src: "./fonts/OpenSansVF.ttf",
   weight: "100 200 300 400 500 600 700 800 900",
 });
 

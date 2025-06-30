@@ -33,7 +33,7 @@ const About = () => {
             <TooltipContent className="animate-in rounded-full">
               <div className="flex items-center space-x-2">
                 <Image
-                  src="/avatar.png"
+                  src="./avatar.png"
                   alt="@this_manab"
                   width={24}
                   height={24}

@@ -23,7 +23,7 @@ const Header = () => {
           <Image
             fill
             className="bg-gray-100 object-center"
-            src="/avatar.png"
+            src="./avatar.png"
             alt="Manab Das"
           />
         </a>
