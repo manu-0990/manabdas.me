@@ -1,9 +1,8 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // Enables static HTML export
-  trailingSlash: true, // Needed for GitHub Pages
+  output: 'export',
+  trailingSlash: true,
   images: {
-    unoptimized: true, // Disable image optimization for static export
+    unoptimized: true,
   },
   basePath: "/manabdas.me",
 
