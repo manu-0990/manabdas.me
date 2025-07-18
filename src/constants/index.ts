@@ -52,7 +52,7 @@ export const Projects = [
     title: "Motion",
     description:
       "An AI based web application that lets you generate stunning animations just by describing them in natural language.",
-    href: "https://github.com/manu-0990/motion",
+    href: "https://any-motion.vercel.app",
     icon: Sparkles,
     tags: ["Next.js", "Prisma", "Postgres", "TailwindCSS", "TypeScript", "Express.js", "Google Gemini" ],
   },
